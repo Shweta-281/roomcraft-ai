@@ -1,4 +1,4 @@
-import React from 'react';
+
 import {Box} from "lucide-react";
 import Button from "./ui/Button";
 import {useOutletContext} from "react-router";
@@ -8,7 +8,7 @@ const Navbar = () => {
     const handleAuthClick = async () => {
         if(isSignedIn) {
             try {
-                await signIn();
+                await signOut();
             } catch (e) {
                 console.error(`Puter sign in failed: $(e)`);
             }

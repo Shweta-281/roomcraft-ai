@@ -8,7 +8,11 @@ type AuthContext = {
     isSignedIn: boolean;
     userName: string | null;
     userId: string | null;
-    refereshAuth: () => Promis<boolean>;
+    refreshAuth: () => Promis<boolean>;
     signOut: () => Promise<boolean>;
     signIn: () => Promise<boolean>;
+}
+
+interface StoreHostedImageParams {
+
 }
