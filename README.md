@@ -1,22 +1,85 @@
-# Welcome to React Router!
+# Roomcraft-AI
 
-A modern, production-ready template for building full-stack React applications using React Router.
+## Transform Any Room Into a 3D AI-Designed Space
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Roomcraft AI is a modern AI-powered interior visualization platform that turns ordinary room images into realistic 3D redesigns in seconds.
 
-## Features
+Upload a room photo → Generate an AI-enhanced redesign → Compare before & after → Export your result.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+Built for speed, simplicity, and beautiful visual feedback.
 
-## Getting Started
+## ✨ Live Demo
+🔗 https://roomcraft-ai-eosin.vercel.app/
 
-### Installation
+## 🧠 The Idea
+
+Interior redesign is expensive, slow, and often hard to visualize.
+
+Roomcraft AI solves this by:
+
+- Letting users upload a real room image
+
+- Generating a 3D reimagined version using AI
+
+- Providing instant visual comparison
+
+- Allowing export of the final result
+
+This makes space visualization faster, more accessible, and interactive.
+
+## 🎯 Core Features
+- 🖼 Smart image upload
+
+- 🤖 AI-powered 3D rendering
+
+- ⚡ Real-time generation workflow
+
+- 🔄 Before/After comparison slider
+
+- 💾 Project saving system
+
+- 📤 One-click image export
+
+- 🔐 Private project storage
+
+- 📱 Clean, responsive UI
+
+## 🛠 Tech Stack
+Frontend
+
+- React
+
+- TypeScript
+
+- React Router (Framework Mode)
+
+- Vite
+
+UI & Interaction
+
+- Lucide Icons
+
+- React Compare Slider
+
+- Custom reusable component system
+
+Architecture
+
+- Modular route-based structure
+
+- Async AI processing layer
+
+- Persistent project management
+
+- Environment-based configuration
+## ⚙️ Local Setup
+Clone the repo:
+```bash
+git clone https://github.com/shweta-281/roomcraft-ai.git
+cd roomcraft-ai
+````
+
+### Install dependencies:
 
 Install the dependencies:
 
@@ -24,9 +87,7 @@ Install the dependencies:
 npm install
 ```
 
-### Development
-
-Start the development server with HMR:
+### Run locally:
 
 ```bash
 npm run dev
@@ -34,54 +95,60 @@ npm run dev
 
 Your application will be available at `http://localhost:5173`.
 
-## Building for Production
+## 🔐 Environment Variables
 
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
+Create a ```.env``` file:
 
 ```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+VITE_PUTER_WORKER_URL=your_worker_url
 ```
+For production (Vercel), configure them inside:
+Project → Settings → Environment Variables
 
-The containerized application can be deployed to any platform that supports Docker, including:
+## 🌍 Deployment
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+Optimized for deployment on Vercel.
 
-### DIY Deployment
+Build settings:
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+- Build Command: `npm run build`
 
-Make sure to deploy the output of `npm run build`
+- Output Directory: ```dist```
 
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
+Push to GitHub → Auto deploy enabled.
 
-## Styling
+## 📈 What This Project Demonstrates
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+- Production-ready React architecture
+
+- Advanced routing using React Router Framework Mode
+
+- Async AI workflow integration
+
+- State management patterns
+
+- Clean UX-focused UI design
+
+- Deployment-ready configuration
+
+- Git workflow & environment management
+
+## 🚀 Future Roadmap
+- Public project sharing
+
+- Authentication & user accounts
+
+- Style presets (Modern, Minimal, Luxury, etc.)
+
+- Multi-room projects
+
+- AI design variation selection
 
 ---
 
-Built with ❤️ using React Router.
+## 👩‍💻 Built By
+Shweta
+
+Frontend Developer | React | AI-integrated Web Apps
+
+
